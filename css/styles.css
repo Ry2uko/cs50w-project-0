@@ -1,0 +1,127 @@
+:root {
+    --gray: #303134;
+    --gray-light: #9AA0A6;
+    --black: #202124;
+    --box-shadow: rgb(23, 23, 23) 0px 1px 6px 0px;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--black);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.links-container {
+    margin: 17px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.links-container a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-container .logo-container {
+    width: 272px;
+    height: 92px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container span.logo-images {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1rem;
+    color: #3B6DC2;
+}
+
+.search-container .form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .input-group {
+    display: flex;
+    border: 1px solid var(--gray-light);
+    border-radius: 24px;
+    box-shadow: none;
+    padding: 10px 5px;
+    align-items: center;
+    width: 580px;
+}
+
+.form-container .input-group:hover {
+    background-color: var(--gray);
+    box-shadow: var(--box-shadow);
+    border-color: var(--gray);
+}
+
+.input-group i {
+    font-size: 1.2rem;
+    color: var(--gray-light);
+    margin: 0 15px;
+}
+
+.input-group i.images {
+    color: #3B6DC2;
+}
+
+.input-group input {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.form-container .buttons-group {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-group input {
+    margin: 0 10px;
+    border-radius: 0.2rem;
+    color: #fff;
+    border: none;
+    background-color: var(--gray);
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}

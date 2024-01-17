@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Advanced Search</title>
+        <link rel="icon" href="./favicon.png" />
+        <link rel="stylesheet" href="css/advanced_search.css" type="text/css" />
+        <script src="https://kit.fontawesome.com/b40850cb13.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="parent-container">
+            <div class="links-container">
+                <a href="./index.html">Google Search</a>
+            </div>
+            <h2>Advanced Search</h2>
+            <hr />
+            <div class="advanced-form-container">
+                <form action="https://www.google.com/search">
+                    <div class="form-box">
+                        <div class="form-column">
+                            <h3>Find pages with...</h3>
+                            <div class="input-group">
+                                <label for="allWords">all these words:</label>
+                                <input type="text" autocomplete="off" id="allWords" name="as_q"/>
+                            </div>
+                            <div class="input-group">
+                                <label for="exactWordPhrase">this exact word or phrase:</label>
+                                <input type="text" autocomplete="off" id="exactWordPhrase" name="as_epq"/>
+                            </div>
+                            <div class="input-group">
+                                <label for="anyWords">any of these words:</label>
+                                <input type="text" autocomplete="off" id="anyWords" name="as_oq"/>
+                            </div>
+                            <div class="input-group">
+                                <label for="noneWords">none of these words:</label>
+                                <input type="text" autocomplete="off" id="noneWords" name="as_eq"/>
+                            </div>
+                        </div>
+                        <div class="form-column search-box">
+                            <h3>To do this in the search box...</h3>
+                            <div class="text-group">
+                                <p>Type the important words: <span class="highlight">cs50 harvard</span></p>
+                            </div>
+                            <div class="text-group">
+                                <p>Put exact words in quotes: <span class="highlight">"computer science"</span></p>
+                            </div>
+                            <div class="text-group">
+                                <p>Type OR between all the words you want: <span class="highlight">"online course" OR youtube</span></p>
+                            </div>
+                            <div class="text-group">
+                                <p>Put a minus sign before words you don't want: <span class="highlight">-mit, -yale</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="button-group">
+                        <button type="submit">Advanced Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
